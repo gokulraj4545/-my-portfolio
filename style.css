@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-color: #1e90ff;
+  background-color: black;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -37,14 +37,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color:gray;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ffd700;
+  color: white;
 
 }
 
@@ -111,7 +111,7 @@ form input, form textarea {
 
 form button {
   padding: 10px 20px;
-  background-color: #1e90ff;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 5px;
@@ -126,7 +126,7 @@ form button:hover {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #1e90ff;
+  background-color:black;
   color: white;
 }
 
@@ -145,7 +145,7 @@ footer {
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #1e90ff;
+  background-color: black;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -154,11 +154,155 @@ footer {
 }
 
 .button:hover {
-  background-color: #0d74d1;
+  background-color: black;
 }
 
 .social-buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+
+
+/* ===== Basic Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+/* ===== Skills Section ===== */
+.skills {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.skills .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skills .card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px black;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.skills .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Avatar Circle */
+.skills .avatar {
+  background: black;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* Meta Info */
+.skills .meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.skills .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.skills .desc {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Progress Bar */
+.skills .progress {
+  position: relative;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.skills .progress i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+/* Skill Category */
+.skill-category {
+  margin-bottom: 40px;
+}
+
+.skill-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #444;
+  text-align: left;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
